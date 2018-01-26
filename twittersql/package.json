@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "nunjucks": "^3.0.1"
+    "nunjucks": "^3.0.1",
+    "pg": "^7.4.1"
   }
 }
