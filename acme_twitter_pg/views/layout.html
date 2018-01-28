@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> {{ title }} </title>
+        <link rel='stylesheets' href='/vendor/bootstrap/dist/css/bootstrap.css' />
+    </head>
+    <body>
+        <div class='container'>
+            <h1> {{ title }} </h1>
+            <ul class='nav nav-pills' style="margin: 10px 0">
+                <li class='nav-item'> 
+                    <a href='/' class='nav-link {% if path==='/'%} active{% endif %}'>Home</a>
+                </li>
+                <li class='nav-item'>
+                    <a href='/tweets' class='nav-link {% if path==='/tweets'%} active{% endif %}'>Tweets</a>
+                </li>
+            </ul>
+            <div class="jumbotron">
+            </div>
+            <ul class='nav nav-pills' style="margin: 10px 0">
+                    <li class='nav-item'> 
+                        <a href='/' class='nav-link {% if path==='/'%} active{% endif %}'>Home</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href='/tweets' class='nav-link {% if path==='/tweets'%} active{% endif %}'>Tweets</a>
+                    </li>
+                </ul>
+            <h3>
+                    {% block content %}
+                    {% endblock %}
+            </h3>
+    </div>
+    </body>
+</html>
