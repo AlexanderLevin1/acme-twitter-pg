@@ -2,7 +2,7 @@ const app = require('express').Router();
 
 const db = require('../db');
 
-app.get('/tweets', (req, res, next) => {
+app.get('/', (req, res, next) => {
     db.getTweets((err, tweets) => {
         if (err) return next(err);
         res.render('tweets', { title: 'Tweets', tweets: tweets })

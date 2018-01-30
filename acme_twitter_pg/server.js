@@ -19,7 +19,7 @@ app.get('/', (req, res, next) => {
     res.render('index', { title: 'Twitter Clone' })
 });
 
-app.get('/tweets', require('./routes/users'));
+app.get('/tweets', require('./routes/tweets'));
 
 db.sync((err) => {
     if (err) return console.log(err);
