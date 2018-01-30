@@ -1,6 +1,7 @@
-{% extends './layout.html' %}
-{% block content %}
-<div>
-Page for {{ user.name }}
+{% extends './layout.html' %} {% block content %}
+<div class="media">
+    <div class="jumbotron media-left">
+        {{ tweet.content }}
+    </div>
 </div>
 {% endblock %}

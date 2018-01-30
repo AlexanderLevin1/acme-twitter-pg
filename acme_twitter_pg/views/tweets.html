@@ -1,9 +1,10 @@
 {% extends './layout.html' %}
 {% block content %}
     <ul>
-        {% for user in users %}
-        <a href='/tweets/{{user.id}}'></a>
-            {% user.id %}
+        {% for tweet in tweets %}
+        <a href='/{{tweet.id}}'>
+            {% tweet.content %}
+        </a>
         {% endfor %}
     </ul>
 {% endblock %}

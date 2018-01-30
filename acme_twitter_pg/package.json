@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "PORT=3000 DATBASE_URL=postgres://twittersql-db nodemon server.js"
+    "start:dev": "PORT=3000 DATBASE_URL=postgres://acme_twitter_pg-db nodemon server.js"
   },
   "author": "",
   "license": "ISC",
